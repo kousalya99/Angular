@@ -1,0 +1,79 @@
+.container{
+  font-family: 'Rubik', sans-serif;
+
+}
+#chart {
+    max-width: 380px;
+    margin: 35px auto;
+    padding: 0;
+  }
+  .color-medium{
+    color: #9eadc8
+  }
+  .color-head{
+    color: #55698a;
+
+}
+.color-bold{
+  color:#4a5f82
+}
+.dropdown-item .ft-book,
+.dropdown-item .icon-users {
+  font-size: 24px; 
+  color: #109f9f;
+}
+.badge {
+  background-color: lightblue;
+  color:green
+}
+.dropdown-item span {
+  color: #9eadc8; 
+}
+
+
+.data-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.badge {
+  background-color: #007bff; 
+  color: #fff; 
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.overall-text {
+  margin-left: 10px;
+}
+
+.percentage {
+  color: #28a745; 
+  font-weight: bold;
+}
+.badgeLabel-One {
+  width: 24px; 
+  height: 18px;
+  background-color: #5d75a2; 
+  display: inline-block;
+  margin-right: 8px; 
+}
+.badgeLabel-Two {
+  width: 24px; 
+  height: 18px;
+  background-color:#1f8be1;
+  display: inline-block;
+  margin-right: 8px; 
+}
+.badgeLabel-Three {
+  width: 24px; 
+  height: 18px;
+  background-color:#72c2c9; 
+  display: inline-block;
+  margin-right: 8px; 
+}
+.percentage{
+  color:#5d75a2
+}

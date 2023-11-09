@@ -1,0 +1,44 @@
+
+
+<div class="list-container table">
+    <h2>Company List</h2>
+    <div class="table-responsive">
+        <table class="custom-table">
+            <thead>
+                <tr>
+                    <th>Company Logo</th>
+                    <th>Company Name</th>
+                    <th>Company Address</th>
+                    <th>Company City</th>
+                    <th>Company State</th>
+                    <th>Company Pincode</th>
+                    <th>Contact No</th>
+                    <th>Email</th>
+                    <th>PAN No</th>
+                    <th>Website</th>
+                    <th>GST NO</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let company of companyList">
+                    <td>   <img [src]="company.logo" alt="{{company.name}} Logo" class="company-logo">
+                        </td>
+                    <td>{{company.name}}</td>
+                    <td>{{company.address}}</td>
+                    <td>{{company.city}}</td>
+                    <td>{{company.state}}</td>
+                    <td>{{company.pincode}}</td>
+                    <td>{{company.contactno}}</td>
+                    <td>{{company.email}}</td>
+                    <td>{{company.panno}}</td>
+                    <td><a href="{{company.web}}" target="_blank">{{company.web}}</a></td>
+                    <td>{{company.gstno}}</td>
+                    <td><i class="ft-delete cursor-pointer text-danger mr-2" ></i>
+                        <i class="ft-edit text-primary cursor-pointer mr-2" (click)="getCompanyListById(company.id)"></i>
+                        <i class="ft-eye text-primary cursor-pointer" ></i></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

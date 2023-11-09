@@ -1,0 +1,128 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "list": [
+    {
+      "id": 2,
+      "invoiceNo": "INV01",
+      "invoicedate": "2023-11-02",
+      "dueDate": "2023-11-03",
+      "balanceAmount": "1000",
+      "sellerDtls": "Guhan",
+      "buyerDtls": "Balaji",
+      "items": []
+    },
+    {
+      "id": 6,
+      "invoiceNo": "#INV10089",
+      "invoicedate": "2023-11-01",
+      "dueDate": "2023-11-11",
+      "balanceAmount": "1400",
+      "sellerDtls": "Kousalya",
+      "buyerDtls": "No.1 Anbalagan street, Avadi,Chennai-54",
+      "items": [
+        {
+          "itemNo": "2",
+          "productDescription": "Mobile App Development",
+          "hours": 2,
+          "totalAmount": 1900
+        },
+        {
+          "itemNo": "4",
+          "productDescription": "Web App Development",
+          "hours": 2,
+          "totalAmount": 2900
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "invoiceNo": "INV#123",
+      "invoicedate": "2023-10-27",
+      "dueDate": "2023-10-25",
+      "balanceAmount": "270",
+      "sellerDtls": "Veera, Ram Nagar, OCF,chennai",
+      "buyerDtls": "Kousalya, Thiruvallur dist, Chennai",
+      "items": [
+        {
+          "itemNo": "1",
+          "productDescription": "Mobile App Development",
+          "hours": 2,
+          "totalAmount": 2000
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "invoiceNo": "#INV12345",
+      "invoicedate": "2023-10-14",
+      "dueDate": "2023-10-28",
+      "balanceAmount": "1900",
+      "sellerDtls": "Kousalya, Avadi",
+      "buyerDtls": "Varun, Chennai",
+      "items": [
+        {
+          "itemNo": "1",
+          "productDescription": "Web App",
+          "hours": 23,
+          "totalAmount": 2300
+        },
+        {
+          "itemNo": "2",
+          "productDescription": "FrontEnd Application",
+          "hours": 3,
+          "totalAmount": 4500
+        }
+      ]
+    },
+    {
+      "invoiceNo": "INV3000",
+      "invoicedate": "2023-10-26",
+      "dueDate": "2023-11-11",
+      "balanceAmount": "0",
+      "sellerDtls": "kousalya,Avaniyapuram, Madurai",
+      "buyerDtls": "Senthil,Kotturpuram,adaiyar,chennai",
+      "items": [
+        {
+          "itemNo": "1",
+          "productDescription": "Angular",
+          "hours": 2,
+          "totalAmount": 450
+        }
+      ],
+      "id": 10
+    },
+    {
+      "id": 11,
+      "invoiceNo": "#INV5292",
+      "invoicedate": "2023-11-15",
+      "dueDate": "2023-11-16",
+      "balanceAmount": "3000",
+      "sellerDtls": "Selvakumar,Chennai",
+      "buyerDtls": "Kanishkar, Madurai",
+      "items": [
+        {
+          "itemNo": "2",
+          "productDescription": "Logo Designing",
+          "hours": 2,
+          "totalAmount": 3000
+        }
+      ]
+    }
+  ]
+}

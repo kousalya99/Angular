@@ -1,0 +1,83 @@
+<div class="container">
+    
+    <div class="card">
+      <div class="card-body">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+           <p class="color-head">Total Submissions</p>
+          </div>
+          <div class="col-4 text-end d-flex justify-content-end align-items-center">
+            <div class="dropdown">
+              <button class="btn border dropdown-toggle" type="button" id="monthlyDropdown" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Monthly
+                <!-- <span><i class="ft-chevron-up"></i><i class="ft-chevron-down"></i></span> -->
+              </button>
+              <div class="dropdown-menu" aria-labelledby="monthlyDropdown">
+                <a class="dropdown-item" href="#">January</a>
+                <a class="dropdown-item" href="#">February</a>
+                <a class="dropdown-item" href="#">March</a>
+              </div>
+            </div>
+            <i class="ft-bar-chart mx-3"></i>
+            <div class="dropdown">
+              <button class="btn" type="button" id="moreOptionsDropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <i class="ft-more-horizontal"></i>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="moreOptionsDropdown">
+                <a class="dropdown-item" href="#"><i class="fa-th-large"></i> Raw Data</a>
+                <a class="dropdown-item" href="#"><i class="fa-download"></i> Export</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown-divider my-2"></div>
+        <div class="row">
+          
+          <div class="col-md-4">
+            <div>
+              
+                <div id="chart">
+                    <apx-chart
+                      [series]="chartOptions.series"
+                      [chart]="chartOptions.chart"
+                      [labels]="chartOptions.labels"
+                      [responsive]="chartOptions.responsive"
+                    ></apx-chart>
+                  </div>
+            </div>
+            <div class="">
+              <div class="data-list mt-n2">
+                <div class="data-item">
+                  <div class="">
+                    <span class="badge badgeLabel-One"></span>
+                    <span class="overall-text">Overall </span>
+                  </div>
+                  <span class="percentage">74%</span>
+                </div>
+                <div class="data-item">
+                  <div>
+                    <span class="badge badgeLabel-Two"></span>
+                    <span class="overall-text">Employees</span>
+                  </div>
+                  <span class="percentage">59%</span>
+                </div>
+                <div class="data-item">
+                  <div>
+                    <span class="badge badgeLabel-Three"></span>
+                    <span class="overall-text">Candidates</span>
+                  </div>
+                  <span class="percentage">41%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-8">
+            <app-submissions-linebar></app-submissions-linebar>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

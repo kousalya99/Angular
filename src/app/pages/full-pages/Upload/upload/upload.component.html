@@ -1,0 +1,11 @@
+<form [formGroup]="uploadForm">
+  <div>
+    <input type="file" (change)="onFileSelected($event)" formControlName="file" />
+  </div>
+  <button (click)="uploadFile()" [disabled]="uploadForm.invalid">Upload</button>
+</form>
+<!-- <div *ngIf="imageUrl">
+  <img [src]="imageUrl" alt="Uploaded Image" />
+</div>
+
+   -->

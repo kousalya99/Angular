@@ -1,0 +1,61 @@
+<form [formGroup]="invoiceForm">
+    <div class="form-row">
+      <div class="col-6">
+        <label for="basic-form-1">Invoice No</label>
+        <input type="text" class="form-control border-style" formControlName="invoiceNo" placeholder="Invoice No">
+      </div>
+      <div class="col-6">
+        <label for="basic-form-2">Invoice-Date</label>
+        <input type="date" class="form-control border-style" formControlName="invoicedate" placeholder="Invoice Date">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-6">
+        <label for="basic-form-2">Balance Due</label>
+        <input type="text" class="form-control border-style"  formControlName="balanceAmount" placeholder="Balance Amount">
+      </div>
+      <div class="col-6">
+        <label for="basic-form-2">Due-date</label>
+        <input type="date" class="form-control border-style"formControlName="dueDate" placeholder="Due Date">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-6">
+        <label for="basic-form-1">Seller Details</label>
+        <textarea class="form-control border-style" formControlName="sellerDtls"  placeholder="Seller Details"></textarea>
+      </div>
+      <div class="col-6">
+        <label for="basic-form-2">Buyer-Details</label>
+        <textarea class="form-control border-style"formControlName="buyerDtls" placeholder="Buyer Details"></textarea>
+      </div>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Item No</th>
+          <th>Product Description</th>
+          <th>Hours</th>
+          <th>Total Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngFor="let invoice of item.controls; let i = index">
+          <tr  [formGroup]="invoice" >
+              <td><label for="basic-form-1">Item No</label><input type="text" class="form-control border-style" formControlName="itemNo" ></td>
+              <td><label for="basic-form-2">Project Description</label><input type="text" class="form-control border-style"formControlName="productDescription" ></td>
+              <td><label for="basic-form-2">Hours</label><input type="number" class="form-control border-style"  formControlName="hours"  ></td>
+              <td> <label for="basic-form-2">Amount</label><input type="number" class="form-control border-style" formControlName="totalAmount"></td>
+          </tr>
+        </ng-container>
+        
+       
+      </tbody>
+    </table>
+    <button (click)="addItem()">Add New</button>
+  </form>
+    <div class="mt-3">
+      <button type="button" class="btn btn-primary mr-2" (click)="putListItem()"><i class="ft-check-square mr-1"></i>Update</button>
+      <button type="button" class="btn btn-secondary"><i class="ft-x mr-1"></i>Cancel</button>
+    </div>
+            
+  

@@ -1,0 +1,42 @@
+.container{
+  font-family: 'Rubik', sans-serif;
+
+}
+.color-medium{
+    color: #9eadc8
+  }
+  .color-head{
+    color: #55698a;
+
+}
+.color-bold{
+  color:#4a5f82
+}
+.progress-container {
+  width: 100%;
+  background-color: #ccc;
+}
+
+.progress-bar {
+  width: 39%;
+  height: 10px;
+  background-color: #007bff; 
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  border-radius: 5px;
+  margin-top: -5px;
+}
+.vertical-line {
+  width: 1px;
+  height: 80%;
+  background-color: #ccc; 
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin-left: -7px; 
+}
+.avg-score{
+  font-size:12px
+}

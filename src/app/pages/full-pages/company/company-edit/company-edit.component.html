@@ -1,0 +1,69 @@
+<form [formGroup]="companyDetailForm">
+  <div class="form-row">
+    <div class="col-12">
+      <label for="basic-form-1">Company Logo</label>
+      <input type="text" class="form-control border-style"  >
+      <img src="" alt="">
+    </div>
+
+  </div>
+  <div class="form-row">
+    <div class="col-4">
+      <label for="basic-form-2">Company Name</label>
+      <input type="text" class="form-control border-style" formControlName="name" placeholder="Company Name">
+    </div>
+    <div class="col-4">
+      <label for="basic-form-2">Company Address</label>
+      <input type="text" class="form-control border-style" formControlName="address" placeholder="Company Address">
+    </div>
+    <div class="col-4">
+      <label for="basic-form-2">Company City</label>
+      <input type="text" class="form-control border-style" formControlName="address" placeholder="Company City">
+    </div>
+  </div>
+  <div class="form-row">
+
+    <div class="col-3">
+      <label for="basic-form-1">Company State</label>
+      <input type="text" class="form-control border-style" formControlName="state"
+        placeholder="Company State">
+    </div>
+    <div class="col-3">
+      <label for="basic-form-2">Company Pincode</label>
+      <input type="text" class="form-control border-style" formControlName="pincode"
+        placeholder="Company Pincode">
+    </div>
+    <div class="col-3">
+      <label for="basic-form-2">Contact No</label>
+      <input type="text" class="form-control border-style" formControlName="contactno"
+        placeholder="Contact No">
+    </div>
+    <div class="col-3">
+      <label for="basic-form-2">Email</label>
+      <input type="text" class="form-control border-style" formControlName="email" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-4">
+      <label for="basic-form-2">PAN No</label>
+      <input type="text" class="form-control border-style" formControlName="panno" placeholder="PAN No">
+    </div>
+    <div class="col-4">
+      <label for="basic-form-2">Website</label>
+      <input type="text" class="form-control border-style" formControlName="web" placeholder="Website">
+    </div>
+    <div class="col-4">
+      <label for="basic-form-2">GST NO</label>
+      <input type="text" class="form-control border-style" formControlName="gstno" placeholder="GST NO">
+    </div>
+  </div>
+
+
+
+
+</form>
+<div class="mt-3">
+  <button type="button" class="btn btn-primary mr-2" (click)="updateCompanyList()"><i
+      class="ft-check-square mr-1"></i>Update</button>
+  <button type="button" class="btn btn-secondary"><i class="ft-x mr-1"></i>Cancel</button>
+</div>

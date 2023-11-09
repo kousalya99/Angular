@@ -1,0 +1,32 @@
+<div class="list-container table">
+    <h2>invoice List</h2>
+    <div class="table-responsive">
+        <table class="custom-table">
+            <thead>
+                <tr>
+                    <th>Invoice No</th>
+                    <th>Invoice Date</th>
+                    <th>Balance Due</th>
+                    <th>Due Date</th>
+                    <th>Seller Details</th>
+                    <th>Buyer Details</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let invoice of lists">
+                    <td>{{invoice.invoiceNo}}</td>
+                    <td>{{invoice.invoicedate}}</td>
+                    <td>{{invoice.dueDate}}</td>
+                    <td>{{invoice.balanceAmount}}</td>
+                    <td>{{invoice.sellerDtls}}</td>
+                    <td>{{invoice.buyerDtls}}</td>
+    
+                    <td><i class="ft-delete cursor-pointer text-danger mr-2" (click)="deleteList(invoice.id)"></i>
+                        <i class="ft-edit text-primary cursor-pointer mr-2" (click)="getListItemById(invoice.id)"></i>
+                        <i class="ft-eye text-primary cursor-pointer"  [routerLink]="['/pages/view-invoice', invoice.id]"></i></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
