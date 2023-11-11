@@ -22,6 +22,7 @@ import { CompanyListComponent } from './company/company-list/company-list.compon
 import { CompanyEditComponent } from './company/company-edit/company-edit.component';
 import { UploadComponent } from './Upload/upload/upload.component';
 import { DashboardComponent } from './Dashboard/dashboard/dashboard.component';
+import { Dashboard2Component } from './dashboard2/dashboard2.component';
 
 
 const routes: Routes = [
@@ -31,6 +32,10 @@ const routes: Routes = [
       {
         path: 'dashboards',
         component: DashboardComponent
+      },
+      {
+        path: 'dashboard2',
+        component:Dashboard2Component
       },
       {
         path: 'companylist',

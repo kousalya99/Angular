@@ -43,6 +43,7 @@ import { NgApexchartsModule } from "ng-apexcharts";
 import { AnalysisLinebarComponent } from './Dashboard/analysis-linebar/analysis-linebar.component';
 import { SubmissionsLinebarComponent } from './Dashboard/submissions-linebar/submissions-linebar.component';
 import { RespondentLinebarComponent } from './Dashboard/respondent-linebar/respondent-linebar.component';
+import { Dashboard2Component } from './dashboard2/dashboard2.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -89,6 +90,7 @@ import { RespondentLinebarComponent } from './Dashboard/respondent-linebar/respo
     AnalysisLinebarComponent,
     SubmissionsLinebarComponent,
     RespondentLinebarComponent,
+    Dashboard2Component,
    
   ],
 })
